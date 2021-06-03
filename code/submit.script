@@ -1,0 +1,13 @@
+#!/bin/env bash
+#SBATCH --job-name=BFsims2_alt
+#SBATCH --time=00:05:30
+#SBATCH --mem-per-cpu=4000
+#SBATCH --ntasks=1
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=lauren.kennedy1@monash.edu
+#SBATCH --output=output2.txt
+#SBATCH --cpus-per-task=24
+
+module load R
+
+R --vanilla < case2-measurementerror_cluster.R > output2.txt

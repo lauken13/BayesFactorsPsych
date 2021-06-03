@@ -67,3 +67,5 @@ model_comp_ind <- loo_compare(cv_fulldata_6_ind,cv_fulldata_5_ind,cv_fulldata_4_
 
 
 saveRDS(list(cv_fulldata_3_ind,cv_fulldata_4_ind,cv_fulldata_5_ind,cv_fulldata_6_ind, model_comp_ind),file = "results/kfold-ind.rds")
+
+
